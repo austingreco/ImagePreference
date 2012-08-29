@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<com.austingreco.android.preference.ImagePreference
+		android:title="ImagePreference" 
+		android:summary="ImagePreference with default icon 'add'."
+		android:key="test"
+		android:icon="@android:drawable/ic_menu_add"
+	/>
+	<com.austingreco.android.preference.ImagePreference
+		android:title="ImagePreference" 
+		android:summary="ImagePreference with no default icon."
+		android:key="test2"
+	/>
+	<Preference
+		android:title="Regular Pref"
+		android:key="none"
+		android:icon="@android:drawable/ic_menu_add" 
+		android:summary="Regular Preference with no default icon."
+	/>
+	<CheckBoxPreference
+		android:title="Regular Checkbox"
+		android:key="test4" 
+		android:summaryOn="For comparison."
+		android:summaryOff="hi"
+		android:defaultValue="true"
+	/>
+</PreferenceScreen>
